@@ -28,3 +28,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/proton/backuptool/backuptool.sh:install/bin/backuptool.sh \
     vendor/proton/backuptool/backuptool.functions:install/bin/backuptool.functions
+
+# Skip boot jars check
+SKIP_BOOT_JARS_CHECK := true
