@@ -21,8 +21,6 @@ $(call inherit-product, vendor/proton/telephony/telephony.mk)
 $(call inherit-product, vendor/proton/audio/audio.mk)
 $(call inherit-product-if-exists, vendor/proton/signing/dev.mk)
 
-# Flatten APEXs for performance
-OVERRIDE_TARGET_FLATTEN_APEX := true
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
