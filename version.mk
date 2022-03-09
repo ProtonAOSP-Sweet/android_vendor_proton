@@ -13,6 +13,8 @@
 # limitations under the License.
 
 CUSTOM_ROM_VERSION := 12.3.0
+CUSTOM_ROM_PLATFORM_RELEASE_OR_CODENAME := 12L
 
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.build.version.custom=$(CUSTOM_ROM_VERSION)
+    ro.build.version.custom=$(CUSTOM_ROM_VERSION) \
+    ro.custom.platform_release_or_codename=$(CUSTOM_ROM_PLATFORM_RELEASE_OR_CODENAME) \
