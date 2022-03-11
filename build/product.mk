@@ -21,6 +21,10 @@ $(call inherit-product, vendor/proton/telephony/telephony.mk)
 $(call inherit-product, vendor/proton/audio/audio.mk)
 $(call inherit-product-if-exists, vendor/proton/signing/dev.mk)
 
+# Proton APEX
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+$(call inherit-product, vendor/proton/config/proton_apex.mk)
+
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
