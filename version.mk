@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-CUSTOM_ROM_VERSION := 12.3.0
+CUSTOM_ROM_VERSION := 12.3.2
 CUSTOM_ROM_PLATFORM_RELEASE_OR_CODENAME := 12L
 
 ADDITIONAL_SYSTEM_PROPERTIES += \
